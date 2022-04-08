@@ -20,6 +20,14 @@
 ]]></content>
   </entry>
   <entry>
+    <title>testIMG</title>
+    <url>/2022/04/08/test/</url>
+    <content><![CDATA[<h1 id="img"><a class="markdownIt-Anchor" href="#img">#</a> img</h1>
+<p>img aaaaaa</p>
+<p><img data-src="/images/test/1649375861796.png" alt="1649375861796"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>webpack学习</title>
     <url>/2020/10/18/webpack%E6%89%93%E5%8C%85/</url>
     <content><![CDATA[<p>webpack 官网    <span class="exturl" data-url="aHR0cHM6Ly93ZWJwYWNrLmpzLm9yZy8=">https://webpack.js.org/</span></p>
