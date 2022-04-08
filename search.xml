@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>testIMG</title>
-    <url>/2022/04/08/test/</url>
-    <content><![CDATA[<h1 id="img"><a class="markdownIt-Anchor" href="#img">#</a> img</h1>
-<p>img aaaaaa</p>
-<p><img data-src="/images/test/1649375861796.png" alt="1649375861796"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/04/07/hello-world/</url>
     <content><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo</span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting</span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub</span>.</p>
@@ -29,7 +21,7 @@
   </entry>
   <entry>
     <title>webpack学习</title>
-    <url>/2020/10/18/webpack%E6%89%93%E5%8C%85/</url>
+    <url>/2020/10/18/webpack/</url>
     <content><![CDATA[<p>webpack 官网    <span class="exturl" data-url="aHR0cHM6Ly93ZWJwYWNrLmpzLm9yZy8=">https://webpack.js.org/</span></p>
 <h2 id="安装nodejs"><a class="markdownIt-Anchor" href="#安装nodejs">#</a> 安装 nodejs</h2>
 <p>​        如何安装自己看官网教程，webpack 依赖于 nodejs</p>
@@ -70,7 +62,7 @@
 <p>重新安装版本</p>
 <p>npm i css-loader@5.2.4 -D</p>
 <p>npm i style-loader@2.0.0 -D</p>
-<p><img data-src="C:%5CUsers%5Cenhen%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220306093947150.png" alt="image-20220306093947150"></p>
+<p><img data-src="/images/webpack/1649377283108.png" alt="1649377283108"></p>
 <h3 id="css中的图片背景"><a class="markdownIt-Anchor" href="#css中的图片背景">#</a> css 中的图片背景</h3>
 <p>​    （ 使用 url-loader,url-loader 依靠 file-loader）</p>
 <p>​    下载安装  npm i url-loader file-loader -D</p>
@@ -94,16 +86,15 @@
 <p>import   ‘’iconfont.css 路径 “</p>
 <p>看到 iconfont.css 中需要几个文件一同引入过来</p>
 <p>（utl 根据实际情况更改）</p>
-<p><img data-src="C:%5CUsers%5Cenhen%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220306100544676.png" alt="image-20220306100544676"></p>
+<p><img data-src="/images/webpack/1649377304788.png" alt="1649377304788"></p>
 <p>引入目录为（有些还需要 svg，看 iconfont.css 需要什么）</p>
-<p><img data-src="C:%5CUsers%5Cenhen%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220306100723156.png" alt="image-20220306100723156"></p>
+<p><img data-src="/images/webpack/1649377319020.png" alt="1649377319020"></p>
 <p>于是在 index.html 配置引用</p>
 <p>（本人在这里傻逼了，class 没写，一直还以为哪里出错）</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>webpack打包文件<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>webpack打包<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>其他资源打包<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;iconfont icon-shezhi&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;iconfont icon-dingdan&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;iconfont icon-shangpin&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;iconfont icon-yonghuqun&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;iconfont icon-quanxian&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>webpack.config.js  module 中 rules:[{}] 配置为</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"> <span class="comment">// 打包其他资源</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">exclude</span>: <span class="regexp">/\.(css|less|js|html|jpg|png|gif)$/</span>,</span><br><span class="line">  <span class="attr">loader</span>: <span class="string">&#x27;file-loader&#x27;</span>,</span><br><span class="line">   <span class="attr">options</span>: &#123;</span><br><span class="line">   <span class="comment">//输出文件夹</span></span><br><span class="line">   <span class="attr">outputPath</span>: <span class="string">&#x27;others&#x27;</span></span><br><span class="line">            &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>打包运行命令 webpack  打包成功</p>
-<p><img data-src="C:%5CUsers%5Cenhen%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220306101124211.png" alt="image-20220306101124211"></p>
 <h2 id="devserver"><a class="markdownIt-Anchor" href="#devserver">#</a> devServer</h2>
 <p>​    帮助自动打包，修改代码后，不需要每次 webpack 打包</p>
 <ul>
@@ -118,7 +109,6 @@
 <p>运行命令 npx webpack-dev-server</p>
 <p>在源文件 src 里面修改代码保存即自动打包，刷新浏览器即可看到（建立安装 vscode 自动刷新插件 —Live Server，实现保存即可看到浏览器内容，无须刷新)</p>
 <p>下载好在需要监听的 html 文件右键，选择 open with Live Server</p>
-<p><img data-src="C:%5CUsers%5Cenhen%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220306110529265.png" alt="image-20220306110529265"></p>
 </li>
 </ul>
 <h2 id="以上打包完整代码"><a class="markdownIt-Anchor" href="#以上打包完整代码">#</a> 以上打包完整代码</h2>
@@ -140,7 +130,6 @@
 <p>完整代码为：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> <span class="title class_">HtmlWebpackPlugin</span> = <span class="built_in">require</span>(<span class="string">&#x27;html-webpack-plugin&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">    <span class="comment">// 输入</span></span><br><span class="line">    <span class="comment">// entry: &#x27;./src/index.js&#x27;,</span></span><br><span class="line">    <span class="comment">// 多文件配置多个入口</span></span><br><span class="line">    <span class="attr">entry</span>: &#123;</span><br><span class="line">        <span class="attr">index</span>: <span class="string">&#x27;./src/index.js&#x27;</span>,</span><br><span class="line">        <span class="attr">login</span>: <span class="string">&#x27;./src/login.js&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 输出</span></span><br><span class="line">    <span class="attr">output</span>: &#123;</span><br><span class="line">        <span class="comment">// 输出目录</span></span><br><span class="line">        <span class="comment">// path: path.resolve(__dirname, &#x27;dist&#x27;),</span></span><br><span class="line">        <span class="comment">// filename: &#x27;bundle.js&#x27;,</span></span><br><span class="line">        <span class="comment">// 多文件输出</span></span><br><span class="line">        <span class="attr">path</span>: path.<span class="title function_">resolve</span>(__dirname, <span class="string">&#x27;dist&#x27;</span>),</span><br><span class="line">        <span class="attr">filename</span>: <span class="string">&#x27;js/[name].js&#x27;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// loader配置</span></span><br><span class="line">    <span class="attr">module</span>: &#123;</span><br><span class="line">        <span class="attr">rules</span>: [</span><br><span class="line">            <span class="comment">// 打包css文件</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">test</span>: <span class="regexp">/\.css$/</span>,</span><br><span class="line">                <span class="attr">use</span>: [</span><br><span class="line">                    <span class="string">&#x27;style-loader&#x27;</span>,</span><br><span class="line">                    <span class="string">&#x27;css-loader&#x27;</span></span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="comment">//打包less文件</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">test</span>: <span class="regexp">/\.less$/</span>,</span><br><span class="line">                <span class="attr">use</span>: [</span><br><span class="line">                    <span class="string">&#x27;style-loader&#x27;</span>,</span><br><span class="line">                    <span class="string">&#x27;css-loader&#x27;</span>,</span><br><span class="line">                    <span class="string">&#x27;less-loader&#x27;</span></span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="comment">// 打包css中url图片文件</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">test</span>: <span class="regexp">/\.(jpg|png|gif|svg)$/i</span>,</span><br><span class="line">                <span class="comment">// url-loader依靠file-loader所以需要下载两个</span></span><br><span class="line">                <span class="attr">loader</span>: <span class="string">&#x27;url-loader&#x27;</span>,</span><br><span class="line">                <span class="attr">options</span>: &#123;</span><br><span class="line">                    <span class="comment">// 设置图片小于6*1024，就会被base64处理图片，减少请求数量</span></span><br><span class="line">                    <span class="attr">limit</span>: <span class="number">6</span> * <span class="number">1024</span>,</span><br><span class="line">                    <span class="comment">// 关闭url-loader的es6模块化，不然html里面img元素会有问题</span></span><br><span class="line">                    <span class="attr">esModule</span>: <span class="literal">false</span>,</span><br><span class="line">                    <span class="comment">// [ext]取原来扩展名  名字长度取10</span></span><br><span class="line">                    <span class="attr">name</span>: <span class="string">&#x27;[name].[hash:10].[ext]&#x27;</span>,</span><br><span class="line">                    <span class="comment">// 输出文件夹</span></span><br><span class="line">                    <span class="attr">outputPath</span>: <span class="string">&#x27;images&#x27;</span>,</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 打包html文件img问题</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">test</span>: <span class="regexp">/\.(htm|html)$/</span>,</span><br><span class="line">                <span class="attr">loader</span>: <span class="string">&#x27;html-withimg-loader&#x27;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="comment">// 打包其他资源</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">exclude</span>: <span class="regexp">/\.(css|less|js|html|jpg|png|gif)$/</span>,</span><br><span class="line">                <span class="attr">loader</span>: <span class="string">&#x27;file-loader&#x27;</span>,</span><br><span class="line">                <span class="attr">options</span>: &#123;</span><br><span class="line">                    <span class="comment">//输出文件夹</span></span><br><span class="line">                    <span class="attr">outputPath</span>: <span class="string">&#x27;others&#x27;</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line"></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">plugins</span>: [</span><br><span class="line">        <span class="comment">// 使用插件html-webpack-plugin打包html文件</span></span><br><span class="line">        <span class="comment">// new HtmlWebpackPlugin()打包多一个index.html文件</span></span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">HtmlWebpackPlugin</span>(&#123;</span><br><span class="line">            <span class="comment">// 复制入门文件index.html结构样式</span></span><br><span class="line">            <span class="attr">template</span>: <span class="string">&#x27;./src/index.html&#x27;</span>,</span><br><span class="line">            <span class="comment">//输出文件名字</span></span><br><span class="line">            <span class="attr">filename</span>: <span class="string">&#x27;index.html&#x27;</span>,</span><br><span class="line">            <span class="comment">//打包优化</span></span><br><span class="line">            <span class="attr">chunks</span>: [<span class="string">&#x27;index&#x27;</span>]</span><br><span class="line">        &#125;),</span><br><span class="line">        <span class="comment">// 多文件</span></span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">HtmlWebpackPlugin</span>(&#123;</span><br><span class="line">            <span class="comment">// 复制入门文件login.html结构样式</span></span><br><span class="line">            <span class="attr">template</span>: <span class="string">&#x27;./src/login.html&#x27;</span>,</span><br><span class="line">            <span class="comment">//输出文件名字</span></span><br><span class="line">            <span class="attr">filename</span>: <span class="string">&#x27;login.html&#x27;</span>,</span><br><span class="line">            <span class="comment">//打包优化</span></span><br><span class="line">            <span class="attr">chunks</span>: [<span class="string">&#x27;login&#x27;</span>]</span><br><span class="line">        &#125;)</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">mode</span>: <span class="string">&#x27;development&#x27;</span>,</span><br><span class="line">    <span class="comment">// 开发服务器devServer 用来自动化 </span></span><br><span class="line">    <span class="comment">// 特点：只会在内存中编译打包，不会有任何输出</span></span><br><span class="line">    <span class="comment">// 启动命令为 npx webpack-dev-server</span></span><br><span class="line">    <span class="attr">devServer</span>: &#123;</span><br><span class="line">        <span class="comment">// contentBase: path.resolve(__dirname, &#x27;dist&#x27;),//官方文档已经说被弃用</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="comment">// 启动gzip压缩</span></span><br><span class="line">        <span class="attr">compress</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="comment">// 启动端口号</span></span><br><span class="line">        <span class="attr">port</span>: <span class="number">3001</span>,</span><br><span class="line">        <span class="comment">//自动打开浏览器</span></span><br><span class="line">        <span class="attr">open</span>: <span class="literal">true</span>,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>多文件打包成功</p>
-<p><img data-src="C:%5CUsers%5Cenhen%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220306122628808.png" alt="image-20220306122628808"></p>
 </li>
 </ul>
 <h2 id="babel配置"><a class="markdownIt-Anchor" href="#babel配置">#</a> babel 配置</h2>
@@ -165,12 +154,12 @@
 <h2 id="sourcemap源码映射"><a class="markdownIt-Anchor" href="#sourcemap源码映射">#</a> sourceMap 源码映射</h2>
 <p>源码的映射，通过 sourceMap 打包找到真正源码的位置</p>
 <ul>
-<li>解决编出来的源码位置并不是实际的位置，比如<img data-src="C:%5CUsers%5Cenhen%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220306133502413.png" alt="image-20220306133502413"></li>
+<li>解决编出来的源码位置并不是实际的位置，比如<img data-src="/images/webapck%E6%89%93%E5%8C%85/image-20220306133502413.png" alt="image-20220306133502413"></li>
 </ul>
 <p>问题：点击上图右侧，并不是真正 index.js 映射的源码位置</p>
 <p>面试官问 map 文件是什么？就是 sourceMap 源码映射</p>
 <p>详情官网 <span class="exturl" data-url="aHR0cHM6Ly93ZWJwYWNrLmpzLm9yZy9jb25maWd1cmF0aW9uL2RldnRvb2wvI3Jvb3Q=">https://webpack.js.org/configuration/devtool/#root</span></p>
-<p><img data-src="C:%5CUsers%5Cenhen%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220306135405476.png" alt="image-20220306135405476"></p>
+<p><img data-src="/images/webpack/1649377493782.png" alt="1649377493782"></p>
 <p>配置如下：（开发模式下建立用 3 不生成 map 文件且为源码）</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">devtool</span>:<span class="string">&#x27;eval-cheap-module-source-map&#x27;</span></span><br></pre></td></tr></table></figure>
 <h2 id="使用第三方插件"><a class="markdownIt-Anchor" href="#使用第三方插件">#</a> 使用第三方插件</h2>
@@ -184,7 +173,7 @@
 <ul>
 <li>
 <p>分包 建立 build 目录同级，划分三个文件，分别为 webpack.base.js webpack.dev.js  webpack.pro.js</p>
-<p><img data-src="C:%5CUsers%5Cenhen%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220306150352686.png" alt="image-20220306150352686"></p>
+<p><img data-src="/images/webpack/1649377530057.png" alt="1649377530057"></p>
 </li>
 <li>
 <p>安装分包工具 wepack-merge，合并配置文件</p>
@@ -228,7 +217,7 @@
 <li>推荐方法，在 webpack.config.js 中 devServer 节点中，增加一个属性</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">proxy</span>:&#123;</span><br><span class="line">  <span class="comment">//检测当请求路径前面为/api时，将会替换为后面的ip</span></span><br><span class="line">    <span class="string">&quot;/api&quot;</span>:<span class="string">&quot;http://localhost:666&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img data-src="C:%5CUsers%5Cenhen%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220306153725798.png" alt="image-20220306153725798"></p>
+<p><img data-src="/images/webpack/1649377552076.png" alt="1649377552076"></p>
 <p>安装 axios  npm i axios -S</p>
 <p>前端请求 (需要跨域接口前面用 /api)</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 引入axios</span></span><br><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">&quot;axios&quot;</span>);</span><br><span class="line"><span class="comment">//发请求</span></span><br><span class="line">axios.<span class="title function_">get</span>(<span class="string">&quot;/api/getList&quot;</span>).<span class="title function_">then</span>(<span class="function"><span class="params">res</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(res);</span><br><span class="line">&#125;).<span class="title function_">catch</span>(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(err);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
@@ -266,11 +255,11 @@
 <li>
 <p>在 server 的终端下开启后台 node app.js, 在上一级前端目录在开启前端 npm run server (有的是 npm run dev, 具体看 package.json 配置)</p>
 <p>发现问题跨域！！！</p>
-<p><img data-src="C:%5CUsers%5Cenhen%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220306161947962.png" alt="image-20220306161947962"></p>
+<p><img data-src="/images/webpack/1649377571332.png" alt="1649377571332"></p>
 <p>具体解决方法请回看上面一点点，简单来说就是在 devServer 节点配置</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">proxy</span>:&#123;</span><br><span class="line">    <span class="string">&quot;/api&quot;</span>:<span class="string">&quot;跨域ip&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>成功解决，跨域请求成功</p>
-<p><img data-src="C:%5CUsers%5Cenhen%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220306162654022.png" alt="image-20220306162654022"></p>
+<p><img data-src="/images/webpack/1649377584724.png" alt="1649377584724"></p>
 </li>
 </ul>
 <h3 id="webpackconfigjs跨域配置代码"><a class="markdownIt-Anchor" href="#webpackconfigjs跨域配置代码">#</a> webpack.config.js 跨域配置代码</h3>
@@ -300,13 +289,13 @@
 </li>
 <li>
 <p>module 使用 postcss-loader 要写在 css-loader 后面，卸载后面才是前一个调用</p>
-<p><img data-src="webpack%E6%89%93%E5%8C%85.assets/image-20220307094633512.png" alt="image-20220307094633512"></p>
+<p><img data-src="/images/webpack/1649377609082.png" alt="1649377609082"></p>
 </li>
 <li>
 <p>配置 当前目录下 新建一个文件 postcss-config.js</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">    <span class="attr">plugins</span>: [<span class="built_in">require</span>(<span class="string">&#x27;autoprefixer&#x27;</span>)(&#123;</span><br><span class="line">        <span class="attr">overrideBrowserslist</span>: [</span><br><span class="line">            <span class="string">&#x27;defaults&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Android 4.1&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Chrome&gt;31&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;ff&gt;31&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;ie&gt;=8&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;last 2 versions&#x27;</span></span><br><span class="line">        ]</span><br><span class="line">    &#125;)]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>成功实现兼容处理</p>
-<p><img data-src="webpack%E6%89%93%E5%8C%85.assets/image-20220307100845714.png" alt="image-20220307100845714"></p>
+<p><img data-src="/images/webpack/1649377622896.png" alt="1649377622896"></p>
 </li>
 </ul>
 <h3 id="css压缩"><a class="markdownIt-Anchor" href="#css压缩">#</a> css 压缩</h3>
