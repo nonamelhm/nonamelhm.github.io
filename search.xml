@@ -4,7 +4,7 @@
     <title>ES6</title>
     <url>/2022/05/08/ES6/</url>
     <content><![CDATA[<h1 id="前提"><a class="anchor" href="#前提">#</a> 前提</h1>
-<pre><code>   我真的是绝了啊，面试的时候问到es6脑子都一片空白，不过也大体是论文搞的人傻了，也是概念不够深，平常用的箭头函数老多都说不出来傻逼一个，就记住了那么几个。为此，我决定再次好好学习一番。
+<pre><code>我决定再次好好学习一番。
 </code></pre>
 <h1 id="含义"><a class="anchor" href="#含义">#</a> 含义</h1>
 <p>​       <code> ES</code>  全称 <code>ECMAScript</code> , 是脚本语言的规范，平时编写的 JavaScript 是 ECMA 一种体现，所以 ES 新特性其实指的是 JavaScript 的新特。<strong>所以 ES 新特性指的就是 JavaScript 的新特性。</strong></p>
